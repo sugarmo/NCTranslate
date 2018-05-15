@@ -24,6 +24,11 @@
     completionHandler(NCUpdateResultNoData);
 }
 
+- (NSEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(NSEdgeInsets)defaultMarginInset
+{
+    return NSEdgeInsetsZero;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

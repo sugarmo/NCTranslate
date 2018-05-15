@@ -14,7 +14,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     [WebViewConfigurator configWebView:self.webView];
+
+    self.view.layer.backgroundColor = [NSColor whiteColor].CGColor;
 }
 
 - (void)setRepresentedObject:(id)representedObject
