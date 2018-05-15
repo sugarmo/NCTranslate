@@ -21,6 +21,7 @@
 		B0C188AB20A99CE200562681 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = B0C188AA20A99CE200562681 /* inject.js */; };
 		B0C188AC20A99CE500562681 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = B0C188AA20A99CE200562681 /* inject.js */; };
 		B0C188AD20A99CEA00562681 /* WebViewConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C188A820A99BCA00562681 /* WebViewConfigurator.m */; };
+		B0C188B420AACEF600562681 /* PRCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C188B220AACEF600562681 /* PRCColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		B0C188A720A99BCA00562681 /* WebViewConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewConfigurator.h; sourceTree = "<group>"; };
 		B0C188A820A99BCA00562681 /* WebViewConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewConfigurator.m; sourceTree = "<group>"; };
 		B0C188AA20A99CE200562681 /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = inject.js; sourceTree = "<group>"; };
+		B0C188B220AACEF600562681 /* PRCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCColor.m; sourceTree = "<group>"; };
+		B0C188B320AACEF600562681 /* PRCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCColor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 		B0C1889420A9919200562681 /* TodayWidget */ = {
 			isa = PBXGroup;
 			children = (
+				B0C188B320AACEF600562681 /* PRCColor.h */,
+				B0C188B220AACEF600562681 /* PRCColor.m */,
 				B0C1889520A9919200562681 /* TodayViewController.h */,
 				B0C1889620A9919200562681 /* TodayViewController.m */,
 				B0C1889820A9919200562681 /* TodayViewController.xib */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C188AD20A99CEA00562681 /* WebViewConfigurator.m in Sources */,
+				B0C188B420AACEF600562681 /* PRCColor.m in Sources */,
 				B0C1889720A9919200562681 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

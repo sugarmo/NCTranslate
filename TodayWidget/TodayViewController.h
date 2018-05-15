@@ -13,4 +13,6 @@
 
 @property (weak) IBOutlet WKWebView *webView;
 
+@property (weak) IBOutlet NSButton *expandButton;
+
 @end

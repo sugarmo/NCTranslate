@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController">
             <connections>
+                <outlet property="expandButton" destination="Ho9-Jd-MZe" id="Ev9-7f-gdJ"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
                 <outlet property="webView" destination="OQj-Pa-V9U" id="fcp-A6-Jnr"/>
             </connections>
@@ -15,24 +16,40 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="413" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="413" height="380"/>
             <subviews>
                 <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQj-Pa-V9U">
-                    <rect key="frame" x="0.0" y="0.0" width="413" height="300"/>
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="380"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="300" id="58c-M6-0hE"/>
+                        <constraint firstAttribute="height" constant="380" id="58c-M6-0hE"/>
                     </constraints>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ho9-Jd-MZe">
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="2ZL-Yz-TVc"/>
+                    </constraints>
+                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" alignment="center" lineBreakMode="truncatingTail" state="on" inset="2" id="zAQ-l8-kgU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="systemBold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showAllContent:" target="-2" id="s7c-ft-vXm"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="OQj-Pa-V9U" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="4Ja-aj-5Ds"/>
                 <constraint firstItem="OQj-Pa-V9U" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Bij-Aw-490"/>
+                <constraint firstItem="Ho9-Jd-MZe" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="IJ3-Aa-olH"/>
                 <constraint firstAttribute="trailing" secondItem="OQj-Pa-V9U" secondAttribute="trailing" id="Q1Z-rJ-oNk"/>
+                <constraint firstAttribute="trailing" secondItem="Ho9-Jd-MZe" secondAttribute="trailing" id="Tpt-rW-55I"/>
                 <constraint firstAttribute="bottom" secondItem="OQj-Pa-V9U" secondAttribute="bottom" id="grw-f9-x8t"/>
+                <constraint firstAttribute="bottom" secondItem="Ho9-Jd-MZe" secondAttribute="bottom" id="vuF-Zi-dM1"/>
             </constraints>
             <point key="canvasLocation" x="178.5" y="219"/>
         </customView>
